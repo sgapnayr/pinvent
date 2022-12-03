@@ -1,3 +1,4 @@
+const path = require('path')
 const cors = require('cors')
 const helmet = require('helmet')
 const express = require('express')
@@ -11,6 +12,7 @@ const app = express()
 require('dotenv').config()
 const { PORT, MONGO_URI } = process.env
 const userRoutes = require('./routes/userRoute')
+const productRoutes = require('./routes/productRoute')
 const errorHandler = require('./middleware/errorMiddleware')
 
 // * Logger
@@ -33,6 +35,8 @@ app.use(cookieParser())
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false, limit: '1kp' }))
+app.use("/uploads", express.static(path.join(__dirname, "uploads")))
 
 // * Routes
 app.use('/api/users', userRoutes)
+app.use('/api/products', productRoutes)
