@@ -4,11 +4,14 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const debug = require('debug')('app:startup')
+const cookieParser = require('cookie-parser')
 
 // * Imports
 const app = express()
 require('dotenv').config()
 const { PORT, MONGO_URI } = process.env
+const userRoutes = require('./routes/userRoute')
+const errorHandler = require('./middleware/errorMiddleware')
 
 // * Logger
 app.use((req, res, next) => {
@@ -16,14 +19,19 @@ app.use((req, res, next) => {
     next()
 })
 
-// ! Middleware
-app.use(cors())
-app.use(helmet())
-app.use(express())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true, limit: '1kp' }))
-
 // ? Connect
 mongoose
     .connect(MONGO_URI)
     .then(() => { app.listen(PORT, debug(`Server is on PORT: ${PORT}`)) })
+
+// ! Middleware
+app.use(cors())
+app.use(helmet())
+app.use(express())
+app.use(errorHandler)
+app.use(cookieParser())
+app.use(express.json())
+app.use(express.urlencoded({ extended: false, limit: '1kp' }))
+
+// * Routes
+app.use('/api/users', userRoutes)
