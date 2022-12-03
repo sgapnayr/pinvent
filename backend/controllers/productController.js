@@ -17,7 +17,7 @@ const createProduct = asyncHandler(async (req, res) => {
         let uploadedFile
 
         try {
-            uploadedFile = await cloudinary.
+            uploadedFile = await cloudinary.uploader.upload()
         } catch (error) {
             res.status(400)
             throw new Error("File was not uploaded.")
