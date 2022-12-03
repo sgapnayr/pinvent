@@ -21,7 +21,7 @@ const User = new Schema({
         type: String,
         required: [true, "Please add a Password"],
         minLength: [6, "Password must be a minimum of 6 characters"],
-        // maxLength: [50, "Password must not be more than 50 characters"]
+        maxLength: [200, "Password must not be more than 200 characters"]
     },
     Photo: {
         type: String,
@@ -48,6 +48,7 @@ User.pre('save', async function (next) {
     const salt = await bcrypt.genSalt(8)
     const hashedPassword = await bcrypt.hash(this.Password, salt)
     this.Password = hashedPassword
+    next()
 })
 
 module.exports = mongoose.model('User', User)

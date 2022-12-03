@@ -31,6 +31,7 @@ app.use(express())
 app.use(errorHandler)
 app.use(cookieParser())
 app.use(express.json())
+app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false, limit: '1kp' }))
 
 // * Routes
