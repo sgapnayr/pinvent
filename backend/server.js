@@ -13,6 +13,7 @@ require('dotenv').config()
 const { PORT, MONGO_URI } = process.env
 const userRoutes = require('./routes/userRoute')
 const productRoutes = require('./routes/productRoute')
+const contactRoute = require('./routes/contactRoute')
 const errorHandler = require('./middleware/errorMiddleware')
 
 // * Logger
@@ -40,3 +41,4 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")))
 // * Routes
 app.use('/api/users', userRoutes)
 app.use('/api/products', productRoutes)
+app.use('/api/contact', contactRoute)
