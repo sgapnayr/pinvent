@@ -2,9 +2,15 @@ import Card from '../../components/Card'
 import './Auth.css'
 import { AiOutlineLogin, AiOutlineUserAdd } from 'react-icons/ai'
 import { BiLoaderCircle } from 'react-icons/bi'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 function Login() {
+    const navigate = useNavigate()
+
+    const handlePath = (path) => {
+        navigate(path)
+    }
+
     return (
         <div className='Home'>
             <div className='Nav'>
@@ -12,11 +18,11 @@ function Login() {
                     <BiLoaderCircle />  Trier
                 </Link>
                 <div className="LoginToggleButtons">
-                    <button className="RegisterButton">
+                    <button className="RegisterButton" onClick={() => handlePath('/register')}>
                         <div className='Icon'><AiOutlineUserAdd /></div>
                         Register
                     </button>
-                    <button>Dashboard</button>
+                    <button onClick={() => handlePath('/dashboard')}>Dashboard</button>
                 </div>
             </div>
 

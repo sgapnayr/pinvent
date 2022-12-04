@@ -1,0 +1,11 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-style: italic;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    width: 90%;
+    color: black;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+}

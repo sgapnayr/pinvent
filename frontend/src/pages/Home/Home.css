@@ -1,8 +1,13 @@
 .Home {
     min-height: 90vh;
-    background-color: rgb(255, 253, 250);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .2) inset;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -2;
+    background-image: linear-gradient(rgba(255, 253, 250), rgba(255, 253, 250, .5)),
+        url(../../assets/clouds.jpg);
 }
 
 .Nav {
@@ -57,4 +62,9 @@
 .BodyTitle {
     font-style: italic;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+}
+
+.Tagline {
+    font-weight: 300;
+    font-style: italic;
 }

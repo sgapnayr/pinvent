@@ -1,0 +1,184 @@
+.SideBar {
+    min-height: 100vh;
+    width: 33%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .2) inset;
+    border-right: 3px solid rgb(172, 147, 5);
+    transition: .2s all ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 253, 250);
+}
+
+.SideBarClosed {
+    min-height: 100vh;
+    background-color: rgb(255, 253, 250);
+    width: 5%;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .2) inset;
+    border-right: 3px solid rgb(172, 147, 5);
+    transition: .2s all ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.LogoHide {
+    display: none;
+}
+
+.SideBarHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.SubNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+    color: white;
+    background-color: rgb(84, 14, 12);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+}
+
+.SubNavControls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.SubNavControlsHide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.SideBarToggle {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SideBarTab {
+    width: 100%;
+    height: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.SideBarTabClosed {
+    width: 100%;
+    height: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SideBarTab:hover {
+    background-color: rgb(222, 222, 222);
+    color: rgb(77, 77, 77);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+}
+
+.SideBarTabClosed:hover {
+    background-color: rgb(222, 222, 222);
+    color: rgb(77, 77, 77);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+}
+
+.SideBarIcon {
+    margin: 0 .5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.SideBarDesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.AccountTab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.SubItem {
+    width: 100%;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SubTab {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .05);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: .2s all ease-in-out;
+}
+
+.SubTabWrapper {
+    width: 90%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.SubTabWrapperClosed {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubTab:hover {
+    background-color: rgb(222, 222, 222);
+    color: rgb(77, 77, 77);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+}
+
+.SubTabClosed {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    background-color: rgba(0, 0, 0, .05);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .2s all ease-in-out;
+}
+
+.SubTabClosed:hover {
+    background-color: rgb(222, 222, 222);
+    color: rgb(77, 77, 77);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .2);
+}
