@@ -3,9 +3,11 @@
         "changepassword",
         "clicktracking",
         "cloudinary",
+        "createportal",
         "fieldname",
         "forgotpassword",
         "reduxjs",
+        "toastify",
         "updateuser"
     ]
 }

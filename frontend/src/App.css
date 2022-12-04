@@ -1,12 +1,8 @@
-.AppWrap {
-  background: rgb(64, 11, 9);
-  background: linear-gradient(133deg, rgba(64, 11, 9, 1) 24%, rgba(84, 14, 12, 1) 73%, rgba(94, 21, 19, 1) 90%);
-}
-
 .App {
   min-height: 100vh;
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, .2));
   box-shadow: 1px 1px 10px rgba(0, 0, 0, .2) inset;
+  background: linear-gradient(133deg, rgba(64, 11, 9, 1) 24%, rgba(84, 14, 12, 1) 73%, rgba(94, 21, 19, 1) 90%);
 }
 
 body {
@@ -92,4 +88,18 @@ a:active {
   z-index: -2;
   background-image: linear-gradient(rgba(255, 253, 250), rgba(255, 253, 250, .5)),
     url(./assets/clouds.jpg);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+strong {
+  background: -webkit-linear-gradient(rgb(172, 147, 5), rgb(206, 175, 2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

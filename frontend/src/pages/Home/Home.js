@@ -4,6 +4,7 @@ import { AiOutlineUserAdd, AiOutlineCheckCircle } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import './Home.css'
 import { useNavigate } from 'react-router-dom'
+import { ShowOnLogin, ShowOnLogout } from '../../components/protect/hiddenLinks'
 
 function Home() {
     const navigate = useNavigate()
@@ -19,29 +20,33 @@ function Home() {
                     <BiLoaderCircle />  Trier
                 </Link>
                 <div className="LoginToggleButtons">
-                    <button className="RegisterButton" onClick={() => handlePath('/register')}>
-                        <div className='Icon'><AiOutlineUserAdd /></div>
-                        Register
-                    </button>
-                    <button onClick={() => handlePath('/login')}>Login</button>
-                    <button onClick={() => handlePath('/dashboard')}>Dashboard</button>
+                    <ShowOnLogout>
+                        <button className="RegisterButton" onClick={() => handlePath('/register')}>
+                            <div className='Icon'><AiOutlineUserAdd /></div>
+                            Register
+                        </button>
+                        <button onClick={() => handlePath('/login')}>Login</button>
+                    </ShowOnLogout>
+                    <ShowOnLogin>
+                        <button onClick={() => handlePath('/dashboard')}>Dashboard</button>
+                    </ShowOnLogin>
                 </div>
             </div>
 
             <div className="Body">
                 <h1 className="BodyTitle">
-                    Inventory & Invoice <br /> Management System
+                    Inventory. <br /> Management. <br />System.
                 </h1>
                 <p>
                     The Inventory solution to control and manage <br />
-                    products in your company.
+                    products in your business.
                 </p>
                 <p>
-                    For less than a dollar a day, we have<br />
-                    created - and streamlined - an IMS™ with<br />
-                    an enterprise level backend, an overly friendly user <br />
-                    experience, and all the robust management features <br />
-                    to ultimately make growth in your business your only focus.
+                    At price performant levels of less than a dollar a day,<br />
+                    we have created - and streamlined - an IMS™ with<br />
+                    modern security measures, an overly friendly user <br />
+                    experience, and included vital management features to <br />
+                    ultimately make robust growth in your business your only focus. <br />
                 </p>
                 <h3 className='Tagline'>
                     "So Simple, My Dad Uses It" - Founder

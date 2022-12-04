@@ -8,31 +8,35 @@ import Reset from './pages/Auth/Reset';
 import Sidebar from './components/sidebar/Sidebar';
 import Layout from './components/layout/layout'
 import Dashboard from './pages/Dashboard/Dashboard';
+import axios from 'axios'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+axios.defaults.withCredentials = true
 
 function App() {
   return (
-    <div className="AppWrap">
-      <div className='App'>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/forgotpassword" element={<Forgot />} />
-            <Route path="/resetpassword/:resetToken" element={<Reset />} />
+    <div className='App'>
+      <BrowserRouter>
+        <ToastContainer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/forgotpassword" element={<Forgot />} />
+          <Route path="/resetpassword/:resetToken" element={<Reset />} />
 
-            <Route path="/dashboard" element={
-              <div className='Dashboard'>
-                <Sidebar />
-                <Layout>
-                  <Dashboard />
-                </Layout>
-              </div>
-            } />
+          <Route path="/dashboard" element={
+            <div className='Dashboard'>
+              <Sidebar />
+              <Layout>
+                <Dashboard />
+              </Layout>
+            </div>
+          } />
 
-          </Routes>
-        </BrowserRouter>
-      </div>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

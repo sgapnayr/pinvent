@@ -1,0 +1,11 @@
+.Loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    position: absolute;
+    left: 45%;
+    top: 1%;
+    opacity: .5;
+    font-style: italic;
+}

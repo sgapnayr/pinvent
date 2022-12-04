@@ -28,7 +28,6 @@ mongoose
     .then(() => { app.listen(PORT, debug(`Server is on PORT: ${PORT}`)) })
 
 // ! Middleware
-app.use(cors())
 app.use(helmet())
 app.use(express())
 app.use(errorHandler)
@@ -37,6 +36,10 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(express.urlencoded({ extended: false, limit: '1kp' }))
 app.use("/uploads", express.static(path.join(__dirname, "uploads")))
+app.use(cors({
+    origin: ["http://localhost:3000", "https://trier.vercel.app"], // TODO Change URL depending on app
+    credentials: true
+}))
 
 // * Routes
 app.use('/api/users', userRoutes)
