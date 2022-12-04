@@ -1,0 +1,50 @@
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-height: 10vh;
+    padding: .5rem 1rem;
+}
+
+.UserFormCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Form {
+    min-height: 40vh;
+    width: 50vw;
+    background-color: white;
+    margin-bottom: 10vh;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.FormTitle {
+    font-style: italic;
+    margin: -.5rem 0 1rem 0;
+}
+
+.LoginIcon {
+    font-size: 1rem;
+    margin: -1rem .25rem -1rem -.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FormDesc {
+    margin: .5rem 0 -.25rem;
+}
+
+.LoginButton {
+    margin: 1rem 0 2rem 0;
+    padding: .5rem 4rem;
+}

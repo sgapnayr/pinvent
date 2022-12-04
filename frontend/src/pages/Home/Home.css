@@ -1,0 +1,60 @@
+.Home {
+    min-height: 90vh;
+    background-color: rgb(255, 253, 250);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2) inset;
+}
+
+.Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-height: 10vh;
+    padding: .5rem 1rem;
+}
+
+.Logo {
+    font-size: 1.5rem;
+    color: rgb(84, 14, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginToggleButtons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Icon {
+    margin: 0 .25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.RegisterButton {
+    background-color: rgb(255, 253, 250);
+    border: 3px solid rgb(84, 14, 12);
+    color: rgb(84, 14, 12);
+    transition: .2s all ease-in-out;
+    font-weight: 800;
+}
+
+.RegisterButton:hover {
+    border: 3px solid rgb(84, 14, 12);
+    color: rgb(255, 253, 250);
+    background-color: rgb(84, 14, 12);
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, .2);
+}
+
+.Body {
+    padding: 0 0 0 1rem;
+}
+
+.BodyTitle {
+    font-style: italic;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+}

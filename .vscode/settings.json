@@ -5,6 +5,7 @@
         "cloudinary",
         "fieldname",
         "forgotpassword",
+        "reduxjs",
         "updateuser"
     ]
 }
