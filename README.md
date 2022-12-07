@@ -1,2 +1,1 @@
-# pinvent
-# prestigeims
+Prestige Equipment Inventory Management System# prestigeims
