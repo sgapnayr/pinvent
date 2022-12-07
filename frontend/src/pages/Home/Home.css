@@ -41,7 +41,7 @@
 }
 
 .RegisterButton {
-    background-color: rgb(255, 253, 250);
+    background-color: rgb(255, 253, 250, 0);
     border: 3px solid rgb(84, 14, 12);
     color: rgb(84, 14, 12);
     transition: .2s all ease-in-out;

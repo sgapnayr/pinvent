@@ -19,21 +19,25 @@ function Sidebar() {
         {
             title: "Dashboard",
             icon: <AiOutlineDashboard />,
-            path: "/dashboard"
+            path: "/dashboard",
+            index: 0
         },
         {
             title: "Add Product",
             icon: <AiOutlineShopping />,
-            path: "/add-product"
+            path: "/add-product",
+            index: 1
         },
         {
             title: "Account",
             icon: <AiOutlineProfile />,
+            index: 2
         },
         {
             title: "Report a Bug",
             icon: <AiOutlineBug />,
-            path: "/contact"
+            path: "/contact",
+            index: 3
         },
     ]
 
@@ -62,7 +66,7 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
-            {Menu.map(tab => {
+            {Menu.map((tab, idx) => {
                 return (
                     <>
                         <div key={tab.title} className={Toggle ? 'SideBarTabClosed' : 'SideBarTab'} onClick={() => handleNavigation(tab.path)}>

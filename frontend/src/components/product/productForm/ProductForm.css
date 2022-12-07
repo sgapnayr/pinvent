@@ -1,0 +1,48 @@
+.Quill {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
+    margin: 1rem 0 0 0;
+    width: 40vw;
+}
+
+.PreviewImage {
+    background-color: white;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    margin: .5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+}
+
+.ImageInput {
+    border-bottom: none;
+    padding: 0;
+    width: 50%;
+    text-align: center;
+    margin: .5rem;
+    color: rgb(172, 147, 5);
+    margin-top: -.5rem;
+}
+
+.ImageTypes {
+    opacity: .5;
+    font-weight: 200;
+}
+
+.Image {
+    height: 10rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px rgba;
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
+}
+
+.ProductButton {
+    margin-bottom: 0rem;
+}

@@ -11,6 +11,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import axios from 'axios'
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AddProduct from './pages/AddProducts/AddProduct';
 
 axios.defaults.withCredentials = true
 
@@ -31,6 +32,24 @@ function App() {
               <Sidebar />
               <Layout>
                 <Dashboard />
+              </Layout>
+            </div>
+          } />
+
+          <Route path="/add-product" element={
+            <div className='Dashboard'>
+              <Sidebar />
+              <Layout>
+                <AddProduct />
+              </Layout>
+            </div>
+          } />
+
+          <Route path="/contact" element={
+            <div className='Dashboard'>
+              <Sidebar />
+              <Layout>
+                <h3>Report a bug</h3>
               </Layout>
             </div>
           } />

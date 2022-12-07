@@ -7,13 +7,13 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 253, 250);
+    background-color: white;
 }
 
 .SideBarClosed {
     min-height: 100vh;
     background-color: rgb(255, 253, 250);
-    width: 5%;
+    width: 7%;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, .2) inset;
     border-right: 3px solid rgb(172, 147, 5);
     transition: .2s all ease-in-out;
