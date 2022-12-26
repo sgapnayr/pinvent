@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Neucha&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+  --background-color: rgb(255, 204, 0);
+}
+
 .App {
   min-height: 100vh;
   filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, .2));
   box-shadow: 1px 1px 10px rgba(0, 0, 0, .2) inset;
-  background: linear-gradient(133deg, rgba(64, 11, 9, 1) 24%, rgba(84, 14, 12, 1) 73%, rgba(94, 21, 19, 1) 90%);
+  background: rgb(255, 204, 0);
   font-family: sans-serif;
 }
 
@@ -30,9 +34,9 @@ button {
   transition: .2s all ease-in-out;
   cursor: pointer;
   color: white;
-  background-color: rgb(84, 14, 12);
+  background-color: var(--background-color);
   border-radius: 5px;
-  border: 3px solid rgb(84, 14, 12);
+  border: 3px solid var(--background-color);
   font-weight: 800;
   display: flex;
   justify-content: space-between;
@@ -40,9 +44,9 @@ button {
 }
 
 button:hover {
-  border: 3px solid rgb(84, 14, 12);
+  border: 3px solid var(--background-color);
   background-color: rgb(255, 253, 250);
-  color: rgb(84, 14, 12);
+  color: var(--background-color);
   box-shadow: 1px 1px 12px rgba(0, 0, 0, .2);
 }
 
@@ -59,12 +63,12 @@ input {
   text-align: center;
   margin: .5rem 0;
   border: none;
-  border-bottom: 1px solid rgb(84, 14, 12);
+  border-bottom: 1px solid var(--background-color);
   outline: none;
 }
 
 a {
-  color: rgb(84, 14, 12);
+  color: var(--background-color);
   text-decoration: none;
   margin: 0rem 0 1.5rem 0;
   transition: .2s all ease-in-out;
@@ -90,7 +94,7 @@ a:active {
   position: relative;
   z-index: -2;
   background-image: linear-gradient(rgba(255, 253, 250), rgba(255, 253, 250, .5)),
-    url(./assets/clouds.jpg);
+    url(./assets/yard4.jpg);
 }
 
 form {
@@ -103,7 +107,5 @@ form {
 
 strong {
   padding: 0 .15rem;
-  background: -webkit-linear-gradient(rgb(172, 147, 5), rgb(206, 175, 2));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--background-color);
 }

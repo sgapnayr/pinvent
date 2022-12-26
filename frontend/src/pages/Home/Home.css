@@ -7,7 +7,7 @@
     position: relative;
     z-index: -2;
     background-image: linear-gradient(rgba(255, 253, 250), rgba(255, 253, 250, .5)),
-        url(../../assets/clouds.jpg);
+        url(../../assets/shop1.jpg);
 }
 
 .Nav {
@@ -21,10 +21,19 @@
 
 .Logo {
     font-size: 1.5rem;
-    color: rgb(84, 14, 12);
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.LogoIcon {
+    margin: 0 .5rem 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 2rem;
 }
 
 .LoginToggleButtons {
@@ -41,17 +50,17 @@
 }
 
 .RegisterButton {
-    background-color: rgb(255, 253, 250, 0);
-    border: 3px solid rgb(84, 14, 12);
-    color: rgb(84, 14, 12);
+    background-color: transparent;
+    border: 3px solid black;
+    color: black;
     transition: .2s all ease-in-out;
     font-weight: 800;
 }
 
 .RegisterButton:hover {
-    border: 3px solid rgb(84, 14, 12);
+    border: 3px solid var(--background-color);
     color: rgb(255, 253, 250);
-    background-color: rgb(84, 14, 12);
+    background-color: var(--background-color);
     box-shadow: 1px 1px 12px rgba(0, 0, 0, .2);
 }
 

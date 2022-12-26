@@ -1,5 +1,6 @@
 import './Sidebar.css'
 import { BiLoaderCircle, BiMenuAltRight } from 'react-icons/bi'
+import { GiFarmTractor, GiBulldozer } from 'react-icons/gi'
 import { AiOutlineDashboard, AiOutlineShopping, AiOutlineProfile, AiOutlineBug } from 'react-icons/ai'
 import { RiArrowRightSLine, RiArrowDownSLine } from 'react-icons/ri'
 import { BsPersonCheck, BsPersonPlus } from 'react-icons/bs'
@@ -23,8 +24,8 @@ function Sidebar() {
             index: 0
         },
         {
-            title: "Add Product",
-            icon: <AiOutlineShopping />,
+            title: "Add Machine",
+            icon: <GiBulldozer />,
             path: "/add-product",
             index: 1
         },
@@ -59,10 +60,10 @@ function Sidebar() {
             <div className="SubNav">
                 <div className={Toggle ? "SubNavControlsHide" : "SubNavControls"}>
                     <div className={Toggle ? 'LogoHide' : 'SideBarHead'} to='/dashboard' >
-                        <BiLoaderCircle />  Trier
+                        <span className='LogoIcon'><GiFarmTractor /></span> Prestige
                     </div>
                     <div className="SideBarToggle" onClick={() => setToggle(!Toggle)}>
-                        {Toggle ? <BiLoaderCircle /> : <BiMenuAltRight />}
+                        {Toggle ? <GiFarmTractor /> : <BiMenuAltRight />}
                     </div>
                 </div>
             </div>

@@ -27,7 +27,7 @@ const ProductForm = ({
                         </div>
                     ) : ''}
 
-                    <h5 className='FormDesc'>Product Name</h5>
+                    <h5 className='FormDesc'>Machine Name</h5>
                     <input placeholder='Item Name...' type="text" value={product.name} name="name" onChange={handleInputChange} />
                     <h5 className='FormDesc'>Category</h5>
                     <input placeholder='Item Category...' type="text" value={product.category} name="category" onChange={handleInputChange} />

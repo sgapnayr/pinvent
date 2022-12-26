@@ -68,22 +68,22 @@ const productSlice = createSlice({
                 state.message = action.payload
                 toast.error(action.payload)
             })
-            .addCase(getProducts.pending, (state) => {
-                state.isLoading = true
-            })
-            .addCase(getProducts.fulfilled, (state, action) => {
-                state.isLoading = false
-                state.isSuccess = true
-                state.isError = false
-                state.products = action.payload
-                // toast.success("Product Added Successfully")
-            })
-            .addCase(getProducts.rejected, (state, action) => {
-                state.isLoading = false
-                state.isSuccess = false
-                state.message = action.payload
-                toast.error(action.payload)
-            })
+        // .addCase(getProducts.pending, (state) => {
+        //     state.isLoading = true
+        // })
+        // .addCase(getProducts.fulfilled, (state, action) => {
+        //     state.isLoading = false
+        //     state.isSuccess = true
+        //     state.isError = false
+        //     state.products = action.payload
+        //     // toast.success("Product Added Successfully")
+        // })
+        // .addCase(getProducts.rejected, (state, action) => {
+        //     state.isLoading = false
+        //     state.isSuccess = false
+        //     state.message = action.payload
+        //     toast.error(action.payload)
+        // })
     }
 });
 

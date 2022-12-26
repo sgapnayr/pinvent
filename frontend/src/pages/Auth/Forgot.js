@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Card from '../../components/Card'
 import './Auth.css'
 import { AiOutlineMail, AiOutlineUserAdd } from 'react-icons/ai'
-import { BiLoaderCircle } from 'react-icons/bi'
+import { GiFarmTractor } from 'react-icons/gi'
 import { Link, useNavigate } from 'react-router-dom'
 import { forgotPassword, validateEmail } from '../../services/authService'
 import { toast } from 'react-toastify'
@@ -38,7 +38,7 @@ function Forgot() {
         <div className='Home'>
             <div className='Nav'>
                 <Link className="Logo" to='/'>
-                    <BiLoaderCircle />  Trier
+                    <span className='LogoIcon'><GiFarmTractor /></span> Prestige Equipment
                 </Link>
                 <div className="LoginToggleButtons">
                     <button className="RegisterButton" onClick={() => handlePath('/login')}>
@@ -54,7 +54,7 @@ function Forgot() {
                     <div className="Form">
                         <div className='Nav'>
                             <Link className="Logo" to='/'>
-                                <BiLoaderCircle />  Trier
+                                <span className='LogoIcon'><GiFarmTractor /></span> Prestige Equipment
                             </Link>
                         </div>
 

@@ -1,7 +1,7 @@
 import Card from '../../components/Card'
 import './Auth.css'
 import { AiOutlineLogin, AiOutlineUserAdd } from 'react-icons/ai'
-import { BiLoaderCircle } from 'react-icons/bi'
+import { GiFarmTractor } from 'react-icons/gi'
 import { Link, useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'
@@ -66,7 +66,7 @@ function Login() {
             {IsLoading && <Loader />}
             <div className='Nav'>
                 <Link className="Logo" to='/'>
-                    <BiLoaderCircle />  Trier
+                    <span className='LogoIcon'><GiFarmTractor /></span> Prestige Equipment
                 </Link>
                 <div className="LoginToggleButtons">
                     <button className="RegisterButton" onClick={() => handlePath('/register')}>
@@ -82,7 +82,7 @@ function Login() {
                     <div className="Form">
                         <div className='Nav'>
                             <Link className="Logo" to='/'>
-                                <BiLoaderCircle />  Trier
+                                <span className='LogoIcon'><GiFarmTractor /></span> Prestige Equipment
                             </Link>
                         </div>
 

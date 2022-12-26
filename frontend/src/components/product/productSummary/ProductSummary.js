@@ -13,7 +13,7 @@ function ProductSummary({ products }) {
                 </div>
                 <div className="ProductSquareWrapper">
                     <div className="ProductSquareDesc">
-                        Total Products (Including quantity)
+                        Total Machines
                     </div>
                     <div className="ProductSquareData">
                         {TotalProducts[0].reduce((a, b) => a + b, 0).toLocaleString()}
@@ -41,7 +41,7 @@ function ProductSummary({ products }) {
                 </div>
                 <div className="ProductSquareWrapper">
                     <div className="ProductSquareDesc">
-                        Total Inventory Value
+                        Inventory Value
                     </div>
                     <div className="ProductSquareData">
                         ~${TotalValueArr[0].reduce((a, b) => a + b, 0).toLocaleString()}
